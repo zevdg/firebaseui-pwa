@@ -10,5 +10,10 @@
   "prefer_related_applications": false,
   "theme_color": "#fff",
   "scope": "/",
-  "orientation": "portrait-primary"
+  "orientation": "portrait-primary",
+  "icons": [{
+    "src": "assets/img/icon.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
 }
