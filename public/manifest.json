@@ -1,5 +1,6 @@
 {
   "name": "FirebaseUI Demo",
+  "manifest_version":1,
   "short_name": "FirebaseUIDemo",
   "start_url": "/",
   "display": "standalone",

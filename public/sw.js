@@ -22,6 +22,18 @@ importScripts(
  */
 self.__precacheManifest = [
   {
+    "url": "app.js",
+    "revision": "f92af0e2b995237170b664939df3076d"
+  },
+  {
+    "url": "common.js",
+    "revision": "4705a786beab5c9fccc4fa468828fc32"
+  },
+  {
+    "url": "config.js",
+    "revision": "8b51e438dbae39ff626c1413cc99f4f2"
+  },
+  {
     "url": "index.html",
     "revision": "e44ccb9366a276f230ed43e980eef158"
   },
