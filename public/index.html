@@ -51,6 +51,18 @@
         </div>
         <div id="user-signed-out" class="hidden">
           <h4>You are signed out.</h4>
+          <fieldset>
+              <legend>Configuration</legend>
+              signin flow
+              <label for="signin-popup">
+                <input type="radio" id="signin-popup" name="signin" value="popup">
+                popup
+              </label>
+              <label for="signin-redirect">
+                <input type="radio" id="signin-redirect" name="signin" value="redirect">
+                redirect
+              </label>
+            </fieldset>
           <div id="firebaseui-spa">
             <div id="firebaseui-container"></div>
           </div>

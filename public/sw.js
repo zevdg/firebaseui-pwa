@@ -8,12 +8,10 @@
  * The rest of the code is auto-generated. Please don't update this file
  * directly; instead, make changes to your Workbox build configuration
  * and re-run your build process.
- * See https://goo.gl/YYPcyY
+ * See https://goo.gl/2aRDsh
  */
 
-importScripts(
-  "https://storage.googleapis.com/workbox-cdn/releases/3.0.0-beta.0/workbox-sw.js"
-);
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.0.1/workbox-sw.js");
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
@@ -23,11 +21,11 @@ importScripts(
 self.__precacheManifest = [
   {
     "url": "app.js",
-    "revision": "f92af0e2b995237170b664939df3076d"
+    "revision": "757396cd7100e010d6fd511076b764c8"
   },
   {
     "url": "common.js",
-    "revision": "4705a786beab5c9fccc4fa468828fc32"
+    "revision": "da53a3a0fef4a75b32b8e3506f15d6fd"
   },
   {
     "url": "config.js",
@@ -35,11 +33,11 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "e44ccb9366a276f230ed43e980eef158"
+    "revision": "6bc96526da3bed0320b1fb8bff0c5c27"
   },
   {
     "url": "manifest.json",
-    "revision": "e5d5d0f61f178bee8a47e2ec7fd14e67"
+    "revision": "f6e2716ee168909d3e2e4867ffd8eeb3"
   },
   {
     "url": "style.css",
