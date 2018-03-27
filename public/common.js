@@ -25,3 +25,10 @@ function getRecaptchaMode() {
   return location.hash.indexOf('recaptcha=invisible') !== -1 ?
       'invisible' : 'normal';
 }
+
+function getSigninMode() {
+  // Quick way of checking query params in the fragment. If we add more config
+  // we might want to actually parse the fragment as a query string.
+  return location.hash.indexOf('signin=redirect') !== -1 ?
+      'redirect' : 'popup';
+}

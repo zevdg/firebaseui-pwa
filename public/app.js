@@ -30,7 +30,7 @@ function getUiConfig() {
       }
     },
     // Opens IDP Providers sign-in flow in a popup.
-    'signInFlow': 'popup',
+    'signInFlow': getSigninMode(),
     'signInOptions': [
       // TODO(developer): Remove the providers you don't need for your app.
       {
@@ -169,6 +169,19 @@ function handleRecaptchaConfigChange() {
   ui.start('#firebaseui-container', getUiConfig());
 }
 
+/**
+ * Handles when the user changes the signin config.
+ */
+function handleSigninConfigChange() {
+  var newSigninValue = document.querySelector(
+      'input[name="signin"]:checked').value;
+  location.replace(location.pathname + '#signin=' + newSigninValue);
+
+  // Reset the inline widget so the config changes are reflected.
+  ui.reset();
+  ui.start('#firebaseui-container', getUiConfig());
+}
+
 
 /**
  * Initializes the app.
@@ -194,6 +207,14 @@ var initApp = function() {
   // document.querySelector(
   //     'input[name="recaptcha"][value="' + getRecaptchaMode() + '"]')
   //     .checked = true;
+
+document.getElementById('signin-popup').addEventListener(
+    'change', handleSigninConfigChange);
+document.getElementById('signin-redirect').addEventListener(
+    'change', handleSigninConfigChange);
 };
+document.querySelector(
+      'input[name="signin"][value="' + getSigninMode() + '"]')
+      .checked = true;
 
 window.addEventListener('load', initApp);
