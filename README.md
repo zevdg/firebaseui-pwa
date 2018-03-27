@@ -7,4 +7,4 @@ PWA example of firebaseui
 [firebaseui](https://github.com/firebase/firebaseui-web/tree/master/demo)
 
 ## This App
-[AJONP firebaseui PWA](https://ajonp-firebaseui-pwa.firebaseapp.com/)
+[AJONP firebaseui PWA](https://fb-js-sdk-test.firebaseapp.com/)
